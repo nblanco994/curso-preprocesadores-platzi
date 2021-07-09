@@ -41,3 +41,26 @@
 			margin-left: 10px;
 		}
 	}
+
+.caja--con-fondo__stats {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+	border-top: none;
+	text-align: center;
+	ul {
+		display: flex;
+	}
+	li {
+		display: flex;
+		margin-right: 15px;
+		opacity: .8;
+	}
+	i {
+		color: $color-claro;
+		margin: 3px auto;
+	}
+	span {
+		color: $color-claro;
+	}
+}
