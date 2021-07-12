@@ -1,0 +1,23 @@
+.banner--homepage {
+    max-width: 290px;
+    padding: 52px;
+    margin: 10px 10px 10px 10px;
+    background-color: $color-secundario;
+    color: $color-claro;
+    h3 {
+        @include font-size(20px);
+        @include titulos($Fuente2);
+    }
+    .button {
+        display: block;
+        width: 100px;
+        height: 41px;
+        text-align: center;
+        padding-top: 1px;
+        border-radius: 20px;
+        background-color: get-opacity($color-primario, .20);
+        border: 2px solid get-opacity($color-claro, .30);;
+        @include font-size(18px);
+        @include titulos($Fuente2);
+    }
+}

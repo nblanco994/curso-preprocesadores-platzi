@@ -1,23 +1,23 @@
 .articulos {
 	width: 40%;
-	padding: 50px 0 0 500px;
+	padding: 50px 0 0 50px;
 }
 .articulo {
 	margin-bottom: 75px;
 	border-bottom: 3px solid $color-secundario;
 	&__categoria {
 		font-weight: 500;
-		font-size: 14px;
+		@include font-size(14px);
 		color: $color-secundario;
 		@include titulos($Fuente2);
 	}
 	&__titulo {
-		font-size: 20px;
+		@include font-size(20px);
 		color: $color-primario;
 		@include titulos($Fuente2);
 	}
 	&__descripcion {
-		font-size: 18px;
+		@include font-size(18px);
 		line-height: 30px;
 		margin-bottom: 30px;
 		padding-right: 100px;
@@ -28,13 +28,15 @@
 	max-width: 660px;
 	margin: 0 auto;
 	&__intro {
-		font-size: 25px;
+		@include font-size(25px);
 	}	
-	h3 {
-		color: $color-secundario;
-	}
 	h2 {
 		margin: 40px 0 40px 0;	
 		text-align: center;
+		@include font-size(45px);
 	}	
+	h3 {
+		color: $color-secundario;
+		margin-bottom: 15px;
+	}
 }

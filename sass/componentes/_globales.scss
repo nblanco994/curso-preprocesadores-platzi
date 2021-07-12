@@ -5,6 +5,7 @@ $color-primario: #333333;
 $color-secundario: #8841DA;
 $color-variacion: #3f579a;
 $color-claro: #FFF;
+$color-sidebar: #ccc;
 
 //Mixins
 @mixin caja {
@@ -30,7 +31,7 @@ $color-claro: #FFF;
 @mixin font-size($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
-	line-height: calculateRem($size)*1.5
+	line-height: calculateRem($size)*1.4
 }
 
 // Funciones

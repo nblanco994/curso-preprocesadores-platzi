@@ -29,7 +29,7 @@
 		@include titulos($Fuente2);
 	}
 	&__titulo {
-		font-size: 50px;
+		@include font-size(50px);
 	}
 
 	&__autor {
