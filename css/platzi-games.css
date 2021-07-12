@@ -717,12 +717,18 @@ main {
       color: color-secundario;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 17px;
+      font-size: 1.0625rem;
+      line-height: 1.4875rem; }
     .caja__contenido h3 {
+      margin-bottom: 15px;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       font-weight: 700;
-      margin-bottom: 15px; }
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.575rem; }
     .caja__contenido p {
       font-size: 16px;
       font-size: 1rem;
