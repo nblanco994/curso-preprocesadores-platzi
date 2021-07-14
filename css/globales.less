@@ -6,6 +6,30 @@
 @Fuente2: 'Oswald', sans-serif;
 @fuente-base: 18px;
 
+:root {
+    --color-primario: #333333;
+    --color-claro: #FFFFFF;
+    --color-secundario: #8841da;
+    --color-variacion: #012179;
+    --color-variacion2: #333333;
+    --color-caja: #FFFFFF;
+    --CARD_BG_ACTIVE: hsl(227, 47%, 94%);
+    --BG: hsl(0, 0%, 100%);
+    --DARKTEXT_HOVER: hsla(230, 14%, 8%, 0.11);
+    --MODE_CHECK: #8841da9f;
+}
+.darkTheme {
+    --color-primario: #FFFFFF;
+    --color-claro: #333333;
+    --color-secundario: #1b2a32;
+    --color-variacion: #FFFFFF;
+    --color-variacion2: #8841da;
+    --color-caja: #8841da;
+    --CARD_BG_ACTIVE: hsl(228, 28%, 25%);
+    --BG: hsl(230, 17%, 14%);
+    --DARKTEXT_HOVER: hsl(0, 0%, 100%);
+    --MODE_CHECK: linear-gradient(hsl(210, 78%, 56%), hsl(276, 68%, 55%));
+}
 .sombra-caja {
     box-shadow: 0px 5px 15px 0px fade(@color-primario, 40%);
 }
@@ -18,13 +42,15 @@
     font-size: @font-size;
     line-height: @font-size + 10%;
 }
+
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0;
     font-family: @Fuente1;
-    color: @color-primario;
+    color: var(--color-primario);
+    background-color: var(--color-claro);
     .fuente(@fuente-base);
 }
 
