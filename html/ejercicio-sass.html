@@ -7,11 +7,24 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="../css/ejercicio-sass.css">
+    <script src="../scripts/retodarkmode.js"></script>
     <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
   </head>
   <body></body>
 </html>
 <main>
+  <section>
+    <div class="darkmode">
+      <div class="darkmode__div">
+        <p class="darkmode__text">Dark mode</p>
+        <div class="darkmode__switch-div">
+          <label class="darkmode__switch">
+            <input type="checkbox" onclick="dashboardTheme()"><span class="darkmode__slider-test"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="perfil"><img class="perfil__avatar" src="../images/avatar.jpg">
     <h2 class="perfil__nombre">John Wick</h2>
     <h3 class="perfil__titulo">Asesino Legendario</h3><a class="perfil__boton" href="#">Seguir</a>

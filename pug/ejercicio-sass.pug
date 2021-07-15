@@ -1,5 +1,13 @@
 include head-sass.pug
 main
+	section
+		div.darkmode
+			div.darkmode__div
+				p.darkmode__text Dark mode
+				div.darkmode__switch-div
+					label.darkmode__switch
+						input(type="checkbox" onclick="dashboardTheme()")
+						span.darkmode__slider-test
 	section.perfil
 		img(class="perfil__avatar" src="../images/avatar.jpg")
 		h2.perfil__nombre John Wick

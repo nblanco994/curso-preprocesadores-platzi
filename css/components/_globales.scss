@@ -5,9 +5,38 @@ $color-claro: #FFFFFF;
 $color-secundario: #8841DA;
 $color-variacion: #3f579a;
 
+:root {
+    --color-primario: #333333;
+    --color-claro: #FFFFFF;
+    --color-secundario: #8841da;
+    --color-secundario2: #8340c7;
+    --color-variacion: #012179;
+    --color-variacion2: #333333;
+    --color-variacion3: 255, 255, 255;
+    --color-caja: #FFFFFF;
+    --CARD_BG_ACTIVE: hsl(227, 47%, 94%);
+    --BG: hsl(0, 0%, 100%);
+    --DARKTEXT_HOVER: hsla(230, 14%, 8%, 0.11);
+    --MODE_CHECK: #8841da9f;
+}
+.darkTheme {
+    --color-primario: #FFFFFF;
+    --color-claro: #333333;
+    --color-secundario: #fffffffa;
+    --color-secundario2: #333333;
+    --color-variacion: #FFFFFF;
+    --color-variacion2: #8841da;
+    --color-variacion3: 1, 33, 121;
+    --color-caja: #8841da;
+    --CARD_BG_ACTIVE: hsl(228, 28%, 25%);
+    --BG: #333333;
+    --DARKTEXT_HOVER: hsl(0, 0%, 100%);
+    --MODE_CHECK: linear-gradient(hsl(210, 78%, 56%), hsl(276, 68%, 55%));
+}
+
 @mixin caja {
     border-radius: 20px;
-    box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.40);
+    box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.40);
     color: $color-primario;
     background-color: $color-claro;
 }
@@ -41,5 +70,6 @@ body {
 main {
     display: flex;
     width: 100%;
+    background-color: var(--color-claro);
     height: 100%;
 }
