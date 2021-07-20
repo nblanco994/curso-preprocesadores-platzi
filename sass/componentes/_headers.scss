@@ -20,10 +20,12 @@
     @include media(desktop-s){
         display: flex;
     }
+    @include media(mobile-only){
+        display: none;
+      }
 }
 
 .header__busqueda {
-    display: none;
     margin-left: auto;
     padding-top: 35px;
     &:hover {
@@ -40,5 +42,22 @@
     }
     @include media(desktop-s){
         display: flex;
+    }
+    @include media(mobile-only){
+        display: none;
+      }
+}
+
+.header--burger {
+    display: none;
+    @include media(mobile-only){
+        width: 100%;
+        display: flex;
+        margin-left: auto; 
+        padding-top: 29px;
+        i {
+            font-size: 35px;
+            color: $color-secundario;
+        }
     }
 }

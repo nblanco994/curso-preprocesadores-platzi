@@ -29,4 +29,10 @@
         margin-right: 20px;
         color: get-opacity($color-primario, .5);
     }
+    @include media(mobile-only){
+        h3 {
+            @include font-size(16px);
+            @include titulos($Fuente2);
+        }
+    }
 }

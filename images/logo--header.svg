@@ -19,11 +19,11 @@
                     <path d="M40,38 C40,38.5521433 39.5774223,39 39.0564443,39 L36.9435557,39 C36.4225777,39 36,38.5521433 36,38 L36,38 C36,37.4478567 36.4225777,37 36.9435557,37 L39.0564443,37 C39.5774223,37.0006398 40,37.4478567 40,38 L40,38 Z" id="Path" fill="#012179" fill-rule="nonzero"></path>
                 </g>
             </g>
-            <text id="Games" font-family="Lato-Black, Lato" font-size="30" font-weight="700" fill="#012179">
+            <text id="Games" font-family="Oswald, sans-serif" font-size="30" font-weight="700" fill="#012179">
                 <tspan x="167.363281" y="58.0234375">Games</tspan>
             </text>
         </g>
-        <text id="Platzi" font-family="ABeeZee-Regular, ABeeZee" font-size="35" font-weight="normal" fill="#8840DA">
+        <text id="Platzi" font-family="Oswald, sans-serif" font-size="35" font-weight="normal" fill="#8840DA">
             <tspan x="75" y="57">Platzi</tspan>
         </text>
     </g>

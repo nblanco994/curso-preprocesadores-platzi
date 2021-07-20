@@ -83,6 +83,7 @@
 		color: $color-claro;
 		@include titulos($Fuente2);
 	}
+
 	@include media(mobile-only){
 		width: 100%;
 		height: auto;
@@ -109,13 +110,22 @@
 			}
 		}
 		.caja--con-fondo__contenido {
+			padding-top: 150px;
 			h2 {
-				@include font-size(20px);
+				margin-top: 7px;
+				@include font-size(25px);
 			}
 			p {
 				display: none;
 			}
+		.caja--con-fondo__categoria {
+			width: auto;
+			max-width: 150px;
+			height: 40px;
+			padding-top: 3px;
+			@include font-size(15px);
 		}
+	}
   }
 }
 
@@ -154,6 +164,10 @@
 			p {
 				display: none;
 			}
+		}
+		.caja--con-fondo__stats {
+			margin: 0px 0px 0px -15px;
+			padding: 0;
 		}
   }
 }
