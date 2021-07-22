@@ -8,6 +8,7 @@
       <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
       <link rel="stylesheet" href="../css/platzi-games.css">
+      <script src="../scripts/darkmode.js"></script>
       <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
     </head>
     <body></body>
@@ -17,20 +18,32 @@
       <div class="logo logo--header"><img src="../images/logo--header.svg"></div>
       <nav class="nav--header">
         <ul>
+          <li><a href="../html/pagina-principal.html">Inicio</a></li>
           <li><a href="#">Playstation</a></li>
           <li><a href="#">Xbox</a></li>
           <li><a href="#">Nintendo</a></li>
           <li><a href="#">PC</a></li>
           <li><a href="#">Mobile</a></li>
         </ul>
-      </nav><a class="header__busqueda" href="#"><i class="fas fa-search"></i><span>Search</span></a>
+      </nav><a class="header__busqueda" href="../html/articulo.html"><i class="fas fa-search"> </i><span>Search</span></a>
+      <div class="header--burger"><i class="fas fa-bars"></i></div>
     </header>
+    <div class="darkmode-articulo">
+      <div class="darkmode-articulo__div">
+        <p class="darkmode-articulo__text">Dark mode</p>
+        <div class="darkmode-articulo__switch-div">
+          <label class="darkmode-articulo__switch">
+            <input type="checkbox" onclick="dashboardTheme()"><span class="darkmode-articulo__slider-test"></span>
+          </label>
+        </div>
+      </div>
+    </div>
     <section class="intro">
       <div class="intro__imagen"><img src="../images/intro.jpg"></div>
       <div class="intro__contenido"><span class="intro__categoria">Noticias</span>
         <h1 class="intro__titulo">Cyberpunk 2077 tiene tres prólogos distintos</h1>
       </div>
-      <div class="intro__autor"><img src="../images/avatar.jpg"><span class="intro__autor-titulo">Autor</span><span class="intro__autor-nombre">John Wick</span></div>
+      <div class="intro__autor"><a href="../html/perfil.html"><img src="../images/avatar.jpg"></a><span class="intro__autor-titulo">Autor</span><span class="intro__autor-nombre">John Wick</span></div>
     </section>
     <article class="articulo--principal">
       <p class="articulo--principal__intro">En Cyberpunk 2077 los jugadores podrán seleccionar entre tres historias de origen diferentes, cada una presentando una ubicación de partida distinta para su personaje.</p>
@@ -59,7 +72,7 @@
         <div class="caja">
           <div class="caja__imagen"><img src="../images/cuphead.jpg"></div>
           <div class="caja__contenido"><span class="caja__categoria">Cuphead</span>
-            <h3>Cuphead se atrasa hasta el año 2020</h3>
+            <h3>Cuphead se atrasa hasta el año 2020 sin retorno</h3>
             <p>Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento.</p><a>Leer Mas		</a>
           </div>
         </div>
@@ -68,6 +81,7 @@
       <div class="logo logo--footer"><img src="../images/logo--footer.svg"></div>
       <nav class="nav--footer">
         <ul>
+          <li><a href="../html/pagina-principal.html">Inicio</a></li>
           <li><a href="#">Playstation</a></li>
           <li><a href="#">Xbox</a></li>
           <li><a href="#">Nintendo</a></li>

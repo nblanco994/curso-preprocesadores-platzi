@@ -5,7 +5,8 @@
     background-color: $color-secundario;
     color: $color-claro;
     @media (max-width: 480px) {
-        padding: 10px 52px 52px 20px;
+        max-width: 320px;
+        padding: 15px 52px 52px 25px;
         justify-self: center;
     }
     h3 {
@@ -21,6 +22,7 @@
         @media (max-width: 480px) {
         margin-bottom: 25px;
         }
+    
     }
     .button {
         display: block;
@@ -30,7 +32,7 @@
         padding-top: 1px;
         border-radius: 20px;
         background-color: get-opacity($color-primario, .20);
-        border: 2px solid get-opacity($color-claro, .30);;
+        color: $color-claro;
         @include font-size(18px);
         @include titulos($Fuente2);
         @include media(mobile-only){
@@ -39,5 +41,9 @@
             height: 50px;
             @include font-size(16px);
 		}
+    }
+    .noDecoration , a:link, a:visited{
+        text-decoration: none;
+        cursor: pointer; 
     }
 }

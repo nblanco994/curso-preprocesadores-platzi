@@ -1,6 +1,6 @@
 .articulos {
 	width: 40%;
-	padding: 50px 0 0 50px;
+	padding: 50px 0 0 50px; 
 }
 .articulo {
 	margin-bottom: 75px;
@@ -13,7 +13,7 @@
 	}
 	&__titulo {
 		@include font-size(20px);
-		color: $color-primario;
+		color: var(--color-primario);
 		@include titulos($Fuente2);
 	}
 	&__descripcion {
@@ -21,19 +21,24 @@
 		line-height: 30px;
 		margin-bottom: 30px;
 		padding-right: 100px;
+		color: var(--color-primario);
 	}
 }
 
 .articulo--principal {
-	max-width: 660px;
+	width: 100%;
+	padding: 0 20% 0 20%;
 	margin: 0 auto;
+	color: var(--color-primario);
+    background-color: var(--color-claro);
 	&__intro {
 		@include font-size(25px);
 	}	
 	h2 {
-		margin: 40px 0 40px 0;	
+		padding: 40px 0 40px 0;	
 		text-align: center;
 		@include font-size(45px);
+		color: var(--color-variacion2);
 	}	
 	h3 {
 		color: $color-secundario;

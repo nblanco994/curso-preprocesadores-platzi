@@ -1,0 +1,69 @@
+.darkmode-articulo {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    @include titulos($Fuente2);
+    font-size: 10px;
+    background-color: var(--color-claro);
+    &__text {
+    padding-top: 7px;  
+    color: var(--color-variacion2);
+    }
+    &__switch {
+    width: 1.4rem;
+    height: .7em;
+    border-radius: 50%;
+  }
+  input {
+    opacity: 0;
+  }
+  &__witch-div{
+    text-align: right;
+  }
+  &__switch{
+    margin-right: -10px;
+}
+  }
+
+  .darkmode-articulo__div {
+    font-weight: 600;
+    margin-right: 70px;
+    text-align: end;
+  }
+  
+  .darkmode-articulo__div:hover {
+    color: var(--DARKTEXT_HOVER);
+  }
+  
+  .darkmode-articulo__slider-test {
+    position: absolute;
+    margin-top: 7.6%;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    top: 0;
+    width: 3rem;
+    height: 1.7rem;
+    bottom: 0;
+    background: var(--color-variacion2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .darkmode-articulo__slider-test:before {
+    position: absolute;
+    border-radius: 50%;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    left: 1.5rem;
+    bottom: 0.15rem;
+    background-color: var(--BG);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked+.darkmode-articulo__slider-test:before {
+    -webkit-transform: translateX(-1.4rem);
+    -ms-transform: translateX(-1.4rem);
+    transform: translateX(-1.4rem);
+  }

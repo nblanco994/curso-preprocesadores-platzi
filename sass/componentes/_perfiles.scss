@@ -1,9 +1,8 @@
-
 .perfil {
 	width: 50%;
 	padding-top: 50px;
 	color: $color-claro;
-	background-color: $color-secundario;	
+	background-color: var(--color-secundario);	
 	&__avatar {
 		display: block;
 		margin: 0 auto;
@@ -12,6 +11,7 @@
 	&__nombre {
 		text-align: center;
 		font-size: 20px;
+		color: var(--color-caja);
 		@include titulos($Fuente2);
 	}
 	&__titulo {
@@ -20,9 +20,7 @@
 		text-align: center;
 		font-weight: 700;
 		font-size: 12px;
-				// incluir aca
-
-		color: get-opacity($color-claro, .5);
+		color: get-opacity(var(--color-variacion3), .40);
 
 	}
 	//2 agregar aca
@@ -37,10 +35,8 @@
 		text-align: center;
 		color: $color-claro;
 		@include titulos($Fuente2);
-				// incluir aca
-
 		border: 2px solid get-opacity($color-claro, .3);
-		background-color: get-opacity(#000, .20);
+		background-color: var(--color-secundario2);
 	}
 }
 
